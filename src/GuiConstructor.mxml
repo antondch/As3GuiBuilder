@@ -1,69 +1,6 @@
 <?xml version="1.0"?>
 <s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark">
     <fx:Script><![CDATA[
-        import mx.controls.Alert;
 
-        public var bytes:ByteArray;
-        var fileName:String;
-        var flNameLength;
-        var xfldLength;
-        var offset;
-        var compSize;
-        var uncompSize;
-        var compMethod;
-        var signature;
-
-        var output;
-
-        public function browse():void
-        {
-            var f:File = new File();
-            var arr:Array = new Array();
-            bytes = new ByteArray();
-            arr.push("swc");
-            f.addEventListener(Event.SELECT, fileSelectHandler);
-            f.browseForOpen("Select swc");
-
-        }
-
-        private function fileSelectHandler(event:Event):void
-        {
-            var zFile:File = new File();
-            zFile = File(event.currentTarget);
-            var zStream:FileStream = new FileStream();
-            zStream.open(zFile, FileMode.READ);
-            bytes.endian = Endian.LITTLE_ENDIAN;
-            while (zStream.position < zFile.size)
-            {
-                zStream.readBytes(bytes, 0, 30);
-                bytes.position = 0;
-                signature = bytes.readInt();
-                if (signature != 0x04034b50)
-                {
-                    break;
-                }
-                bytes.position = 8;
-                compMethod = bytes.readByte();
-                offset = 0;
-                bytes.position = 26;
-                flNameLength = bytes.readShort();
-                offset += flNameLength;
-                bytes.position = 28;
-                xfldLength = bytes.readShort();
-                offset += xfldLength;
-                zStream.readBytes(bytes, 30, offset);
-                bytes.position = 30;
-                fileName = bytes.readUTFBytes(flNameLength);
-                output += fileName + "<br />"; // write file name to text area
-                bytes.position = 18;
-                compSize = bytes.readUnsignedInt();  // store size of compressed portion
-                output += "\tCompressed size is: " + compSize + '<br />';
-                bytes.position = 22;  // offset to uncompressed size
-                uncompSize = bytes.readUnsignedInt();  // store uncompressed size
-                output += "\tUncompressed size is: " + uncompSize + '<br />';.
-            }
-
-        }
         ]]></fx:Script>
-    <s:Button click="browse();" label="Open swc"/>
 </s:WindowedApplication>

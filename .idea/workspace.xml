@@ -64,14 +64,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GuiConstructor.mxml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GuiConstructor.mxml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GuiConstructor.mxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.19859813">
+            <state line="10" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
               <folding>
                 <marker date="1305635893881" expanded="true" signature="145:155" placeholder="{...}" />
                 <marker date="1305635893881" expanded="true" signature="274:333" placeholder="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Readme.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="18" selection-start="182" selection-end="182" vertical-scroll-proportion="0.09781358">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -97,6 +106,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/BuilderContext.as" />
         <option value="$PROJECT_DIR$/src/GuiConstructor.mxml" />
+        <option value="$PROJECT_DIR$/Readme.txt" />
       </list>
     </option>
   </component>
@@ -211,7 +221,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
@@ -410,7 +420,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1271" y="-9" width="1298" height="1042" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -425,7 +435,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24939074" sideWeight="0.6013363" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24939074" sideWeight="0.6013363" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -501,11 +511,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GuiConstructor.mxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.19859813">
+        <state line="10" column="0" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
           <folding>
             <marker date="1305635893881" expanded="true" signature="145:155" placeholder="{...}" />
             <marker date="1305635893881" expanded="true" signature="274:333" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="18" selection-start="182" selection-end="182" vertical-scroll-proportion="0.09781358">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -549,7 +566,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>4.0.0 (player 10.0)</last-edited>
+          <last-edited>4.1.0 AIR</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -566,6 +583,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
